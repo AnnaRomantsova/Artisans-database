@@ -1,0 +1,53 @@
+<!-- MENU SUB -->
+<script>
+ (jQuery)(document).ready(function() {
+       //alert("Отмечен");
+        (jQuery)("[name *= 'razdel_top']").on('ifChanged', function(event){
+
+             var id = (jQuery)(this).attr("id");
+
+             var name = 'li#kk'+id.substr(10)+' input[type="checkbox"]';
+            // alert(name);
+             if ((jQuery)(this).attr("checked") == 'checked')  (jQuery)(name).iCheck('check');
+                else (jQuery)(name).iCheck('uncheck');
+             (jQuery)("#subm_form").submit();
+        });
+
+        (jQuery)("[name *= 'razdel_sub']").on('ifClicked', function(event){
+
+             if ((jQuery)(this).attr("checked") == 'checked')  (jQuery)(this).iCheck('uncheck');
+                else (jQuery)(this).iCheck('check');
+
+             (jQuery)("#subm_form").submit();
+        });
+
+ })
+</script>
+
+
+<h4 class="menu-title" >Разделы</h4>
+<form action='/[%page%]' method='post' id='subm_form'>
+
+<ul class="part-list">
+[%sub/{
+   <li [%open%]>
+     [%T/?
+        A  {   <a href="#"><input type="checkbox" id='razdel_top[%./id%]' name='razdel_top[%./id%]' [%./checked%]  class="transform-check"><span>[%./name%]</span> [%./subs/{<i class="icon-arrow-menu"></i>}%]</a> }
+
+     %]
+     [%subs/{ <ul class="sub-part"> }%]
+     [%sub/{
+            [%T/?
+               A  { <li  id='kk[%././id%]'><a href="#"><input type="checkbox" name='razdel_sub[%./id%]' [%./checked%] class="transform-check open"><span>[%./name%]</span></a></li>}
+
+            %]
+     }%]
+     [%subs/{ </ul> }%]
+
+   </li>
+}%]
+</ul>
+</form>
+<!-- /MENU SUB -->
+
+

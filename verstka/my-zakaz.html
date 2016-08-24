@@ -1,0 +1,341 @@
+﻿<!doctype html>
+
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		
+		<!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+		
+		<title></title>
+		
+		<link rel="stylesheet" href="style/style.css">
+		
+		<!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+		
+		<script src="js/jquery-1.8.3.min.js"></script>
+		<script src="js/jquery.icheck.min.js"></script>
+		<script src="js/jscrollpane/jquery.mousewheel.js"></script>
+		<script src="js/jscrollpane/jquery.jscrollpane.min.js"></script>
+		<script src="js/main.js"></script>
+		
+	</head>
+	
+	<body>
+		
+		<div class="page-wr">
+			
+			<header class="header clearfix ">
+				
+				<hgroup class="hgroup">
+						
+					<h1 class="logo"><a href="#">Baza-<span class="color-1">masterov</span><span class="color-2">.ru</span></a></h1>
+					<h2 class="subtitle">Лучшие мастера и заказы встречаются на нашем сайте</h2>
+				
+				</hgroup>
+				
+				<div class="city">
+					
+					<div class="city-list" id="city-list">
+						
+						<div class="city-name">
+							<a href="#" id="toggle-city"><span>Ростов-на-Дону</span> <i class="icon-arrow-city"></i></a>
+						</div>
+						
+						<ul class="other-city">
+							<li><a href="#">Москва</a></li>
+							<li><a href="#">Санкт-Петербург</a></li>
+							<li><a href="#">Таганрог</a></li>
+							<li><a href="#">Рязань</a></li>
+							<li><a href="#">Золотаревка</a></li>
+							<li><a href="#">Таганрог</a></li>
+							<li><a href="#">Рязань</a></li>
+							<li><a href="#">Золотаревка</a></li>
+						</ul>
+						
+					</div>
+					
+					<div class="city-info">
+						<div class="tel">+7 918 544-44-46</div>
+						<div class="work">пн-пт с 9:00 до 18:00</div>
+					</div>
+					
+				</div>
+				
+				<div class="h-user">
+					
+					<div class="h-user-menu" id="h-user-menu">
+						
+						<div class="h-user-name">
+							<a href="#" id="toggle-menu"><span>Хаустова Наталья</span> <i class="icon-h-user"></i></a>
+						</div>
+						
+						<ul class="h-user-link">
+							<li><a href="index.html">Мой профиль</a></li>
+							<li><a href="settings.html">Настройки</a></li>
+							<li><a href="#">Выход</a></li>
+						</ul>
+						
+					</div>
+					
+					<div class="h-user-more-link">
+							
+						<a href="my-zakaz.html"><span>Мои заказы</span></a>
+						<a href="messages.html"><span>Сообщения</span> <sup>3</sup></a>
+						
+					</div>
+					
+				</div>
+				
+				<div class="h-user" hidden>
+					
+					<ul class="no-login">
+						<li><a href="#">Вход</a></li>
+						<li><a href="#">Регистрация</a></li>
+					</ul>
+					
+				</div>
+				
+			</header>
+			
+			<nav class="nav">
+				
+				<ul class="nav-list">
+					<li><a href="zakaz.html"><i class="icon-target"></i> Заказы</a></li>
+					<li><a href="master.html"><i class="icon-settings"></i> Мастера</a></li>
+					<li><a href="lenta.html"><i class="icon-mouse"></i> Лента</a></li>
+					<li><a href="gallery.html"><i class="icon-bricks"></i> Галерея</a></li>
+				</ul>
+				
+			</nav>
+			
+			<section class="variable-part">
+				
+				<aside class="menu">
+					
+					<h4 class="menu-title">Личный кабинет</h4>
+					
+					<ul class="menu-list">
+						<li><a href="index.html">Мой профиль</a></li>
+						<li><a href="messages.html">Сообщения <sup>2</sup></a></li>
+						<li><a href="my-zakaz.html" class="active">Мои заказы</a></li>
+						<li><a href="good-zakaz.html">Хорошие заказы <i class="icon-star"></i></a></li>
+						<li><a href="good-master.html">Хорошие мастера <i class="icon-heart"></i></a></li>
+						<li><a href="good-article.html">Хорошие статьи <i class="icon-star-heart"></i></a></li>
+						<li><a href="settings.html">Настройки</a></li>
+					</ul>
+					
+					<h4 class="menu-title" hidden>Разделы</h4>
+					
+					<ul class="part-list" hidden>
+					
+						<li>
+							<a href="#"><input type="checkbox" class="transform-check"><span>Раздел</span> <i class="icon-arrow-menu"></i></a>
+							
+							<ul class="sub-part">
+								<li><a href="#"><input type="checkbox" class="transform-check"><span>Подраздел</span></a></li>
+								<li><a href="#"><input type="checkbox" class="transform-check"><span>Подраздел</span></a></li>
+								<li><a href="#"><input type="checkbox" class="transform-check"><span>Подраздел</span></a></li>
+							</ul>
+							
+						</li>
+						
+						<li>
+							<a href="#"><input type="checkbox" class="transform-check"><span>Раздел</span></a>
+						</li>
+						
+						<li>
+							<a href="#"><input type="checkbox" class="transform-check"><span>Раздел</span> <i class="icon-arrow-menu"></i></a>
+							
+							<ul class="sub-part">
+								<li><a href="#"><input type="checkbox" class="transform-check"><span>Подраздел</span></a></li>
+								<li><a href="#"><input type="checkbox" class="transform-check"><span>Подраздел</span></a></li>
+								<li><a href="#"><input type="checkbox" class="transform-check"><span>Подраздел</span></a></li>
+							</ul>
+						</li>
+						
+						<li>
+							<a href="#"><input type="checkbox" class="transform-check"><span>Раздел</span></a>
+						</li>
+						
+						<li>
+							<a href="#"><input type="checkbox" class="transform-check"><span>Раздел</span></a>
+						</li>
+						
+					</ul>
+					
+				</aside>
+				
+				<article class="page-cont">
+				
+					<div class="search-create">
+						<div class="action-link">
+							<a href="create-zakaz.html" class="btn-yes">+ Создать заказ</a>
+						</div>
+						
+						<div class="search">						
+							<input type="text" class="entered-data">							
+							<a href="#" class="icon-lenta-search"></a>
+						</div>
+					</div>
+					
+					<div class="page-in my-zakaz">
+						
+						<div class="lenta-action">
+							<a href="edit-zakaz.html" class="icon-profile-edit">Редактировать</a>
+						</div>
+						
+						<a href="#" class="title-post">Приглашаем мастеров на все руки...</a>
+						
+						<div class="time-post">
+						
+							<p class="when-posted">
+								<i class="icon-clock"></i>
+								<span>2 дня назад</span>
+							</p>
+							
+							<p class="current-date">актуально до 15 марта 2013</p>
+							
+						</div>
+						
+						<div class="zakaz-dscr">
+							<p>Интересующую информацию Вы можете получить в салоне СТУДИИ ТРИКОТАЖА "МиЛена": г. Волгоград, Ворошиловский р-н, ул. Рабоче-Крестьянская, 4 и по телефону: (8442) 95-66-27</p>
+						</div>
+						
+						<div class="profile-tags">
+								
+							<div class="tags">
+								<a href="#">Шитье</a>, <a href="#">Вязание</a>
+							</div>
+							
+							<div class="profile-see-info">
+								
+								<span><i class="icon-see"></i> 245</span>
+								<span><i class="icon-comment"></i> 23</span>
+								
+							</div>
+							
+						</div>
+						
+						<div class="profile-money">
+							<p>Цена договорная</p>
+						</div>
+						
+					</div>
+					
+					<div class="page-in my-zakaz">
+						
+						<div class="lenta-action">
+							<a href="edit-zakaz.html" class="icon-profile-edit">Редактировать</a>
+						</div>
+						
+						<a href="#" class="title-post">Приглашаем мастеров на все руки...</a>
+						
+						<div class="time-post">
+						
+							<p class="when-posted">
+								<i class="icon-clock"></i>
+								<span>2 дня назад</span>
+							</p>
+							
+							<p class="current-date">актуально до 15 марта 2013</p>
+							
+						</div>
+						
+						<div class="zakaz-dscr">
+							<p>Интересующую информацию Вы можете получить в салоне СТУДИИ ТРИКОТАЖА "МиЛена": г. Волгоград, Ворошиловский р-н, ул. Рабоче-Крестьянская, 4 и по телефону: (8442) 95-66-27</p>
+						</div>
+						
+						<div class="profile-tags">
+								
+							<div class="tags">
+								<a href="#">Шитье</a>, <a href="#">Вязание</a>
+							</div>
+							
+							<div class="profile-see-info">
+								
+								<span><i class="icon-see"></i> 245</span>
+								<span><i class="icon-comment"></i> 23</span>
+								
+							</div>
+							
+						</div>
+						
+						<div class="profile-money">
+							<p>12 000 рублей</p>
+						</div>
+						
+					</div>
+					
+					<div class="page-in my-zakaz">
+						
+						<div class="lenta-action">
+							<a href="edit-zakaz.html" class="icon-profile-edit">Редактировать</a>
+						</div>
+						
+						<a href="#" class="title-post">Приглашаем мастеров на все руки...</a>
+						
+						<div class="time-post">
+						
+							<p class="when-posted">
+								<i class="icon-clock"></i>
+								<span>2 дня назад</span>
+							</p>
+							
+							<p class="current-date">актуально до 15 марта 2013</p>
+							
+						</div>
+						
+						<div class="zakaz-dscr">
+							<p>Интересующую информацию Вы можете получить в салоне СТУДИИ ТРИКОТАЖА "МиЛена": г. Волгоград, Ворошиловский р-н, ул. Рабоче-Крестьянская, 4 и по телефону: (8442) 95-66-27</p>
+						</div>
+						
+						<div class="profile-tags">
+								
+							<div class="tags">
+								<a href="#">Шитье</a>, <a href="#">Вязание</a>
+							</div>
+							
+							<div class="profile-see-info">
+								
+								<span><i class="icon-see"></i> 245</span>
+								<span><i class="icon-comment"></i> 23</span>
+								
+							</div>
+							
+						</div>
+						
+						<div class="profile-money">
+							<p>до 700 руб./час</p>
+						</div>
+						
+					</div>
+					
+				</article>
+				
+			</section>
+			
+			<footer class="footer">
+				
+				<ul class="footer-nav">
+					<li><a href="text-page.html">О проекте</a></li>
+					<li><a href="#">Реклама на сайте</a></li>
+					<li><a href="#">Платные услуги</a></li>
+					<li><a href="#">Пользовательское соглашение</a></li>
+					<li><a href="#">Помощь</a></li>
+				</ul>
+				
+				<div class="footer-write">
+					<a href="write-us.html">Написать нам</a>
+				</div>
+				
+				<p class="footer-copy">&copy; Все права защищены Baza-masterov.ru 2013</p>
+				<p class="footer-copy">При использовании материалов обязательно указывать активную ссылку на нас.</p>
+				
+			</footer>
+			
+		</div>
+		
+	</body>
+	
+</html>

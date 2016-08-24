@@ -1,0 +1,186 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Strict//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html>
+        <head>
+               <meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+               <title>[%title%]</title>
+                <meta name="Description" content="[%description%]" />
+                <meta name="Keywords" content="[%keywords%]" />
+
+                <meta charset="UTF-8">
+
+                <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+
+                <link rel="stylesheet" href="/_css/style.css">
+
+                <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+                <script src="/_js/jquery-1.8.3.min.js"></script>
+
+                <script src="/_js/jquery.icheck.min.js"></script>
+
+                <script src="/_js/jquery.reveal.js"></script>
+                <script src="/_js/jquery.core-ui-select.js"></script>
+                <script src="/_js/jscrollpane/jquery.mousewheel.js"></script>
+                <script src="/_js/jscrollpane/jquery.jscrollpane.min.js"></script>
+                <script type='text/javascript' src='/_js/function.js'></script>
+                <script type="text/javascript" src="/_js/jquery.form.js"></script>
+               <script src="/_js/main.js"></script>
+                <script src="/_js/jquery-ui-1.10.3.custom.min.js"></script>
+                <script language="JavaScript" type="text/javascript">
+                        document.onkeyup = function (e) {
+
+                            e = e || window.event;
+                            if (e.keyCode === 13) {
+                                var el = document.getElementById('block-enter');
+                                if (el.style.visibility == 'visible') submit_forms('enter_form');
+
+                                var el = document.getElementById('block-registration');
+                                if (el.style.visibility == 'visible') go_register();
+
+                            }
+                            return false;
+                        }
+                </script>
+
+
+        </head>
+
+        <body>
+                <!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+(function (d, w, c) {
+    (w[c] = w[c] || []).push(function() {
+        try {
+            w.yaCounter10288723 = new Ya.Metrika({id:10288723,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true});
+        } catch(e) { }
+    });
+
+    var n = d.getElementsByTagName("script")[0],
+        s = d.createElement("script"),
+        f = function () { n.parentNode.insertBefore(s, n); };
+    s.type = "text/javascript";
+    s.async = true;
+    s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+
+    if (w.opera == "[object Opera]") {
+        d.addEventListener("DOMContentLoaded", f, false);
+    } else { f(); }
+})(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="//mc.yandex.ru/watch/10288723" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+                <div class="page-wr">
+
+                        <header class="header clearfix ">
+
+                                <hgroup class="hgroup">
+
+                                        <h1 class="logo"><a href="/">Baza-<span class="color-1">masterov</span><span class="color-2">.ru</span></a></h1>
+                                        <h2 class="subtitle">Лучшие мастера и заказы встречаются на нашем сайте</h2>
+
+                                </hgroup>
+
+                                <div class="city">
+                                   [%section1/[]%]
+                                </div>
+
+                                [%section2/[]%]
+
+                                <div id="block-enter" class="reveal-modal">
+                                 <form action="/auth" method="post" id = 'enter_form'>
+                                        <h5 class="title-popap">Здравствуйте!</h5>
+                                        <input type="hidden" name='log_in' value="1">
+                                        <div class="line-edit">
+                                                <input type="text" name='email' placeholder="E-mail" >
+                                        </div>
+
+                                        <div class="line-edit">
+                                                <input type="password" name="password" placeholder="Пароль" >
+                                        </div>
+
+                                        <a href="/auth/forgot/1" class="forgot-password">Забыли пароль?</a>
+
+                                        <div class="action-link">
+                                                <a href="#" class="btn-yes" onclick="submit_forms('enter_form')">Войти</a>
+                                        </div>
+                                  </form>
+                                </div>
+
+                                <div id="block-registration" class="reveal-modal">
+                                   <form action="/auth" method="post" id = 'reg'>
+                                      <input type="hidden" name='register' value="1">
+                                        <h5 class="title-popap">Регистрация</h5>
+
+                                        <div class="line-edit">
+                                                <input type="text" placeholder="E-mail" name='email'>
+                                        </div>
+
+                                        <div class="line-edit">
+                                                <input type="text" placeholder="Имя и фамилия" name='fio'>
+                                        </div>
+
+                                        <div class="line-edit">
+                                                <input type="password" placeholder="Пароль" name='pass1'>
+                                        </div>
+
+                                        <div class="line-edit">
+                                                <input type="password" placeholder="Повторите пароль" name='pass2'>
+                                        </div>
+                                        <div class="line-edit">
+                                             <input type="checkbox" value="1" id="lic_ch" checked onclick="license(this);">
+                                              Я согласен с условиями <a href="/userguide">Пользовательского соглашения</a>
+
+                                         </div>
+                                        <div class="action-link">
+                                                <a href="#" class="btn-yes" id="regbut" onclick="go_register();">Регистрация</a>
+                                        </div>
+                                    </form>
+                                  </div>
+
+
+                        </header>
+
+                        <nav class="nav">
+                                        [%menu_main/[]%]
+                        </nav>
+
+                        <section class="variable-part ">
+
+                                <aside class="menu">
+
+                                       [%menu_user/[]%]
+                                       [%section3/[]%]
+
+
+                                </aside>
+
+                                <article class="page-cont one-col">
+                                        [%main_section/[]%]
+                                </article>
+
+                        </section>
+
+                        <footer class="footer">
+
+                                <ul class="footer-nav">
+                                       [%menu_buttom/[]%]
+
+                                </ul>
+
+                                <div class="footer-write">
+                                        <a href="/feedb">Написать нам</a>
+                                </div>
+
+                                <p class="footer-copy">&copy; Все права защищены Baza-masterov.ru 2013</p>
+                                <p class="footer-copy">При использовании материалов обязательно указывать активную ссылку на сайт.</p>
+
+                        </footer>
+
+                </div>
+
+        </body>
+
+</html>
