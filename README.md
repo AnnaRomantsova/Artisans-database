@@ -7,6 +7,8 @@
 Php, MySQL, jquery.<br />
 <br />
 <img src="/1.JPG">
+<br/>
+<img src="/2.JPG">
 
 
 Interactive catalog for masters on different spheres. After registration user can make his profile with description and photos of his handmades. Also user can place advertisments about things he needs. There is a section on a website with articles about different handmades. The site has an administration panel.&nbsp;
